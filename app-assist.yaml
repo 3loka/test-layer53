@@ -1,0 +1,9 @@
+version: v1
+type: layer
+name: Deploys a Node app on Azure
+configuration:
+  topics: ["node", "azure"]
+  apps: ["azure-oidc"]
+  extensions: ["gh-azure-oidc"]
+  workflow: "node-azure-layer.yaml"
+  ouptut-file: "readme.md"

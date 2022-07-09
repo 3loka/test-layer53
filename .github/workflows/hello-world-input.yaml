@@ -1,0 +1,15 @@
+on:
+  workflow_dispatch:
+    inputs:
+      Name:
+        required: false
+        description: 'Description for name'
+      Age:
+        required: false
+        description: 'Description for Age'
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!"      
